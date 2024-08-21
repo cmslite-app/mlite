@@ -1069,7 +1069,8 @@ $("#form_soap").on("click","#odontogram", function(event){
 
   modal.off('show.bs.modal');
   modal.on('show.bs.modal', function () {
-      modalContent.load(loadURL);
+    modalContent.html('Loading...');
+    modalContent.load(loadURL);
   }).modal();
   return false;
 });

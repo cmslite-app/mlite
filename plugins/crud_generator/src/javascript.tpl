@@ -215,6 +215,7 @@ DATA_ISI
         
             modal.off('show.bs.modal');
             modal.on('show.bs.modal', function () {
+                modalContent.html('Loading...');
                 modalContent.load(loadURL);
             }).modal();
             return false;

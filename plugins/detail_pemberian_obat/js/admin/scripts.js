@@ -406,6 +406,7 @@ eTable += '<td>' + res[i]['no_faktur'] + '</td>';
         
             modal.off('show.bs.modal');
             modal.on('show.bs.modal', function () {
+                modalContent.html('Loading...');
                 modalContent.load(loadURL);
             }).modal();
             return false;
